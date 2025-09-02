@@ -1,0 +1,9 @@
+.dataDetails{
+   background-color: rgb(112, 0, 146);
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding :20px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}

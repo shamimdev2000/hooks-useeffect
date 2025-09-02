@@ -1,0 +1,72 @@
+ import { useEffect, useState } from "react";
+
+function App() {
+
+const[demo, setDemo] = useState([])
+
+ useEffect(()=>{
+
+ fetch('https://jsonplaceholder.typicode.com/todos')
+
+ .then(response => response.json())
+
+ .then(json => setDemo (json))
+
+}, [])
+ const sliceDemo = demo.slice(0, 200)
+
+return (
+
+<>
+
+<div className="habib">
+
+<h1>Habibur Rahman</h1>
+
+</div>
+
+ <div className="Main">
+
+ {
+
+sliceDemo.map((item)=>(
+
+<div className="userId">
+
+22
+
+<h1>userId : {item.userId}</h1>
+
+23
+
+<h1>id: {item.id}</h1>
+
+24
+
+25
+
+</div>
+
+<h1>title: {item.title}</h1>
+
+26
+
+))
+
+27
+
+}
+
+28 </div>
+
+29 </>
+
+30
+
+);
+
+31 }
+
+32
+
+33 export default App;
